@@ -1,3 +1,4 @@
+import CurrentlyCooking from "./CurrentlyCooking";
 import OurRecipesCard from "./OurRecipesCard";
 import OurRecipesTitle from "./OurRecipesTitle";
 import WantToCook from "./WantToCook";
@@ -19,6 +20,7 @@ const OurRecipes = () => {
                     </div>
                     <div className="col-span-3 lg:col-span-2 bg-[#FFFFFF] rounded-xl shadow-sm p-5 w-full">
                         <WantToCook />
+                        <CurrentlyCooking />
                     </div>
                 </div>
             </div>
