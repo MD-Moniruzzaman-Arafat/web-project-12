@@ -1,0 +1,92 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_name": "Spicy Thai Basil Chicken",
+        "recipe_image": "https://i.ibb.co/N6jynH37/img1.jpg",
+        "short_description": "A quick and flavorful Thai chicken stir-fry with basil and chilies.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaf",
+            "100 g red chili",
+            "50 g garlic"
+        ],
+        "preparing_time": 30,
+        "calories": 320
+    },
+    {
+        "recipe_id": 2,
+        "recipe_name": "Creamy Mushroom Pasta",
+        "recipe_image": "https://i.ibb.co/8Dy9Qzv6/img2.jpg",
+        "short_description": "A creamy, comforting pasta with sautéed mushrooms.",
+        "ingredients": [
+            "400 g pasta",
+            "300 g mushroom",
+            "200 ml cream",
+            "50 g parmesan cheese",
+            "30 g garlic"
+        ],
+        "preparing_time": 25,
+        "calories": 450
+    },
+    {
+        "recipe_id": 3,
+        "recipe_name": "Grilled Lemon Herb Salmon",
+        "recipe_image": "https://i.ibb.co/QFqbQtHx/img3.jpg",
+        "short_description": "Tender salmon fillets marinated with lemon and herbs, then grilled to perfection.",
+        "ingredients": [
+            "500 g salmon",
+            "2 tbsp olive oil",
+            "1 lemon",
+            "10 g parsley",
+            "5 g black pepper"
+        ],
+        "preparing_time": 20,
+        "calories": 380
+    },
+    {
+        "recipe_id": 4,
+        "recipe_name": "Vegetable Stir Fry",
+        "recipe_image": "https://i.ibb.co/9xPX32V/img4.jpg",
+        "short_description": "A colorful and healthy stir fry made with fresh vegetables.",
+        "ingredients": [
+            "200 g broccoli",
+            "150 g bell peppers",
+            "100 g carrots",
+            "50 ml soy sauce",
+            "10 ml sesame oil"
+        ],
+        "preparing_time": 15,
+        "calories": 220
+    },
+    {
+        "recipe_id": 5,
+        "recipe_name": "Chicken Caesar Salad",
+        "recipe_image": "https://i.ibb.co/gFTJWFmV/img5.jpg",
+        "short_description": "Classic Caesar salad with grilled chicken and crunchy croutons.",
+        "ingredients": [
+            "300 g chicken breast",
+            "100 g romaine lettuce",
+            "50 g parmesan cheese",
+            "100 g croutons",
+            "50 ml Caesar dressing"
+        ],
+        "preparing_time": 25,
+        "calories": 340
+    },
+    {
+        "recipe_id": 6,
+        "recipe_name": "Classic Margherita Pizza",
+        "recipe_image": "https://i.ibb.co/4ZY8mfvX/img6.jpg",
+        "short_description": "Traditional Italian pizza with tomato, mozzarella, and fresh basil.",
+        "ingredients": [
+            "1 pizza base",
+            "200 g mozzarella cheese",
+            "150 g tomato sauce",
+            "100 g fresh basil",
+            "10 ml olive oil"
+        ],
+        "preparing_time": 35,
+        "calories": 500
+    }
+]
