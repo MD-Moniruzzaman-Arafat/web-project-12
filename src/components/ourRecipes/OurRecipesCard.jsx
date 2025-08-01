@@ -1,6 +1,6 @@
 import { MdOutlineWatchLater } from "react-icons/md";
 import { AiOutlineFire } from "react-icons/ai";
-const OurRecipesCard = ({ recipe }) => {
+const OurRecipesCard = ({ recipe, setWantToCook, wantToCook }) => {
     return (
         <>
             <div className="card bg-[#FFFFFF] max-w-96 shadow-sm">
@@ -26,7 +26,7 @@ const OurRecipesCard = ({ recipe }) => {
                         <span className="flex items-center gap-2"><AiOutlineFire />{recipe?.calories} calories</span>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-[#0BE58A] text-[#150B2B] rounded-full px-5 text-xs">Want to Cook</button>
+                        <button onClick={() => setWantToCook([...wantToCook, recipe])} className="btn bg-[#0BE58A] text-[#150B2B] rounded-full px-5 text-xs">Want to Cook</button>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import OurRecipesCard from "./OurRecipesCard";
 import OurRecipesTitle from "./OurRecipesTitle";
 import WantToCook from "./WantToCook";
 
-const OurRecipes = ({ recipes }) => {
+const OurRecipes = ({ recipes, setWantToCook, wantToCook }) => {
     return (
         <>
             <div className="my-20">
@@ -12,7 +12,7 @@ const OurRecipes = ({ recipes }) => {
                 <div className=" container mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5">
                     <div className="col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-5 p-1 lg:p-0">
                         {
-                            recipes.map(recipe => <OurRecipesCard key={recipe.recipe_id} recipe={recipe} />)
+                            recipes.map(recipe => <OurRecipesCard key={recipe.recipe_id} recipe={recipe} setWantToCook={setWantToCook} wantToCook={wantToCook} />)
                         }
                         {/* <OurRecipesCard />
                         <OurRecipesCard />
@@ -22,7 +22,7 @@ const OurRecipes = ({ recipes }) => {
                         <OurRecipesCard /> */}
                     </div>
                     <div className="col-span-3 lg:col-span-2 bg-[#FFFFFF] rounded-xl shadow-sm p-5 w-full">
-                        <WantToCook />
+                        <WantToCook wantToCook={wantToCook} />
                         <CurrentlyCooking />
                     </div>
                 </div>

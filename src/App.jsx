@@ -6,6 +6,7 @@ import OurRecipes from './components/ourRecipes/OurRecipes'
 
 function App() {
   const [recipes, setRecipes] = useState([]);
+  const [wantToCook, setWantToCook] = useState([])
 
   useEffect(() => {
     const loadData = async () => {
@@ -16,13 +17,13 @@ function App() {
     loadData()
   }, [])
 
-  console.log(recipes)
+  console.log(wantToCook)
 
   return (
     <>
       <Navbar />
       <Hero />
-      <OurRecipes recipes={recipes} />
+      <OurRecipes recipes={recipes} setWantToCook={setWantToCook} wantToCook={wantToCook} />
     </>
   )
 }
