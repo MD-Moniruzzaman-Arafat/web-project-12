@@ -1,5 +1,5 @@
 
-const CurrentlyCookingTable = () => {
+const CurrentlyCookingTable = ({ CurrentlyCook, min, calories }) => {
     return (
         <>
             <div className="overflow-x-auto mt-5">
@@ -12,27 +12,24 @@ const CurrentlyCookingTable = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Cy Ganderton</td>
-                            <td>Quality Control Specialist</td>
-                            <td>Littel, Schaden and Vandervort</td>
-                        </tr>
-                        <tr>
-                            <td>Hart Hagerty</td>
-                            <td>Desktop Support Technician</td>
-                            <td>Zemlak, Daniel and Leannon</td>
-                        </tr>
-                        <tr>
-                            <td>Brice Swyre</td>
-                            <td>Tax Accountant</td>
-                            <td>Carroll Group</td>
-                        </tr>
+
+                        {
+                            CurrentlyCook.map(item => {
+                                return (
+                                    <tr>
+                                        <td>{item?.recipe_name}</td>
+                                        <td>{item?.preparing_time} min</td>
+                                        <td>{item?.calories} calories</td>
+                                    </tr>
+                                )
+                            })
+                        }
                     </tbody>
                     <tfoot>
                         <tr>
                             <td></td>
-                            <td>Total Time = 45 minutes</td>
-                            <td>Total Calories = 1050 calories</td>
+                            <td className="text-xs font-light">Total Time = <br /> {min} minutes</td>
+                            <td className="text-xs font-light">Total Calories = <br /> {calories} calories</td>
 
                         </tr>
                     </tfoot>

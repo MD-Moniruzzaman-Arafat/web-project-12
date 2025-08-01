@@ -7,6 +7,9 @@ import OurRecipes from './components/ourRecipes/OurRecipes'
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [wantToCook, setWantToCook] = useState([])
+  const [CurrentlyCook, setCurrentlyCook] = useState([])
+  const [min, setMin] = useState(0)
+  const [calories, setCalories] = useState(0)
 
   useEffect(() => {
     const loadData = async () => {
@@ -23,7 +26,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <OurRecipes recipes={recipes} setWantToCook={setWantToCook} wantToCook={wantToCook} />
+      <OurRecipes recipes={recipes} setWantToCook={setWantToCook} wantToCook={wantToCook} CurrentlyCook={CurrentlyCook} setCurrentlyCook={setCurrentlyCook} min={min} setMin={setMin} calories={calories} setCalories={setCalories} />
     </>
   )
 }

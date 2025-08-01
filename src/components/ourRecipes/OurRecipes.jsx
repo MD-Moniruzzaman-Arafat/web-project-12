@@ -3,7 +3,7 @@ import OurRecipesCard from "./OurRecipesCard";
 import OurRecipesTitle from "./OurRecipesTitle";
 import WantToCook from "./WantToCook";
 
-const OurRecipes = ({ recipes, setWantToCook, wantToCook }) => {
+const OurRecipes = ({ recipes, setWantToCook, wantToCook, CurrentlyCook, setCurrentlyCook, min, setMin, calories, setCalories }) => {
     return (
         <>
             <div className="my-20">
@@ -22,8 +22,8 @@ const OurRecipes = ({ recipes, setWantToCook, wantToCook }) => {
                         <OurRecipesCard /> */}
                     </div>
                     <div className="col-span-3 lg:col-span-2 bg-[#FFFFFF] rounded-xl shadow-sm p-5 w-full">
-                        <WantToCook wantToCook={wantToCook} />
-                        <CurrentlyCooking />
+                        <WantToCook wantToCook={wantToCook} setWantToCook={setWantToCook} CurrentlyCook={CurrentlyCook} setCurrentlyCook={setCurrentlyCook} min={min} setMin={setMin} calories={calories} setCalories={setCalories} />
+                        <CurrentlyCooking CurrentlyCook={CurrentlyCook} min={min} calories={calories} />
                     </div>
                 </div>
             </div>
